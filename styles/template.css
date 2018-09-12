@@ -1,0 +1,431 @@
+html,
+body {
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Bebas-Neue';
+    margin: 0px;
+    padding: 0px;
+}
+
+.overflowHidden {
+    overflow: hidden !important;
+}
+
+.p-0 {
+    padding: 0px !important;
+}
+
+.mh2 div {
+    height: 5vh !important;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('font/Aleo-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'bebas-neue';
+    src: url('font/bebas/BebasNeue-Regular.otf') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+*/
+    url('font/bebas/BebasNeue-Regular.ttf') format('truetype');
+}
+
+.pageTitle {
+    /* font-family: 'Aleo', 'Calibri'; */
+    font-family: 'bebas-neue';
+}
+
+.Aleo {
+    font-family: 'Aleo';
+}
+
+
+/*** * Loading Gif ***/
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../images/loadingV3.gif) center no-repeat #fff;
+}
+
+.full-height {
+    min-height: 100%;
+    height: 100%;
+}
+
+.hideBody {
+    display: none;
+}
+
+
+/*=============================================
+=            MENU              =
+=============================================*/
+
+.container-menu {
+    transition: 1.5s;
+    display: inline-block;
+    cursor: pointer;
+    top: 25px;
+    right: 15%;
+    position: absolute;
+    z-index: 99 !important;
+}
+
+.container-menu-active {
+    transition: 1.5s;
+    right: 3% !important;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: #505050;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: #ffffff;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #ffffff;
+}
+
+
+/*===== END MENU ======*/
+
+
+/*=============================================
+=            Navigation            =
+=============================================*/
+
+.nav-wrapper {
+    height: 100%;
+    display: flex;
+    position: relative;
+    z-index: -999;
+    opacity: 0;
+}
+
+.nav-wrapper .nav-child {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nav-wrapper.active {
+    opacity: 1;
+}
+
+.century-font {
+    font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "sans-serif" !important;
+}
+
+.aleo-font {
+    font-family: 'Aleo Light';
+    src: url('font/Aleo-Light.otf') format('opentype');
+}
+
+
+/*=====  End of Navigation  ======*/
+
+
+/*=============================================
+=            Containers            =
+=============================================*/
+
+
+/*=====  End of Containers  ======*/
+
+
+/*=============================================
+=            Social Media            =
+=============================================*/
+
+#social {
+    position: absolute;
+    bottom: 25px;
+    left: 15%;
+    text-align: center;
+    color: black;
+}
+
+.icon {
+    display: inline-block;
+    width: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.icon img {
+    width: 100%;
+    display: block;
+}
+
+
+/*=====  End of Social Media   ======*/
+
+
+/*=============================================
+=            STICKY NAVIGATION            =
+=============================================*/
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.20), 0 2px 1px -1px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    line-height: 30px;
+    width: 100%;
+    height: 85px;
+    z-index: 9;
+}
+
+.sticky .logo {
+    margin-top: 15px;
+    width: 60px;
+    height: 60px;
+    margin-left: -10%;
+}
+
+.sticky-page-title {
+    position: absolute;
+    top: 30px;
+    right: 20%;
+    color: #2F2E2C;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Bebas-Neue';
+    z-index: 9;
+}
+
+
+/*=====  End of STICKY NAVIGATION  ======*/
+
+
+/*=============================================
+=            Index CSS            =
+=============================================*/
+
+img.centerImage {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    height: 20%;
+}
+
+img.centerImage:empty {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 20%;
+}
+
+.aboutUsImage {
+    width: 50%;
+}
+
+
+/*=====  End of Index CSS  ======*/
+
+
+/*=============================================
+=            Reach Us Tab            =
+=============================================*/
+
+.reachUsLink {
+    transition: 0.5s;
+    right: 0;
+    top: 45%;
+    position: absolute;
+    width: 50px;
+    height: 180px;
+    /* background: url(../images/icon/reachUsNoBorder.PNG) center no-repeat; */
+    background: url(../images/icon/reachUs.jpg) center no-repeat;
+    background-size: contain;
+}
+
+.reachUsLink:hover {
+    top: 40%;
+    transition: 0.5s;
+    width: 70px;
+    height: 300px;
+}
+
+
+/*=====  End of Reach Us Tab  ======*/
+
+
+/**
+ *
+ * Footer Section
+ *
+ */
+
+footer.footer {
+    padding: 20px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #1C1C1C;
+    font-size: 1em;
+    color: #fff;
+    font-family: 'Century Gothic';
+    letter-spacing: 2px;
+    text-align: justify;
+    justify-content: center;
+}
+
+footer .email {
+    text-align: right;
+}
+
+footer.slant::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -36px;
+    width: 100%;
+    height: 100px;
+    background: #1C1C1C;
+    -webkit-transform: skewY(2.5deg);
+    -moz-transform: skewY(2.5deg);
+    -ms-transform: skewY(2.5deg);
+    -o-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+}
+
+.pull-right {
+    text-align: right;
+}
+
+#aboutUsImage {
+    height: 350px;
+    margin: 0px;
+}
+
+footer.partnersFooter {
+    position: absolute !important;
+    bottom: 0 !important;
+}
+
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+
+@media all and (min-width:1800) {
+    .sticky .logo {}
+}
+
+@media all and (min-width:1025px) and (max-width:1439px) {
+    .sticky .logo {
+        margin-left: -10%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .sticky .logo {
+        margin-left: 10%;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .sticky .logo {
+        margin-left: 10%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .sticky .logo {
+        margin-left: 10%;
+    }
+    img.centerImage {
+        height: 10%;
+    }
+    img.centerImage:empty {
+        height: 10%;
+    }
+    .sticky-page-title {
+        right: 25%;
+    }
+    .reachUsLink {
+        top: 49%;
+        width: 25px;
+        height: 120px;
+    }
+}
+
+
+/* Portrait */
+
+@media screen and (orientation:portrait) {
+    /* Portrait styles here */
+}
+
+
+/* Landscape */
+
+@media screen and (orientation:landscape) {
+    /* Landscape styles here */
+}
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+
+/* iPhone Portrait */
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {}
+
+
+/* iPhone Landscape */
+
+@media screen and (max-device-width: 480px) and (orientation:landscape) {}
+
+@media all and (max-height:768px) {
+    html,
+    body {
+        overflow-y: auto;
+    }
+    #sectionBody {
+        margin-bottom: 50px;
+    }
+    footer.footer {
+        position: relative;
+    }
+    .wide {
+        height: auto !important;
+    }
+}

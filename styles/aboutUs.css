@@ -1,0 +1,565 @@
+.wide {
+    padding-top: 85px;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('../images/background/agencyBG.jpg');
+background-size: cover; */
+}
+
+#cent {
+    width: 100%;
+    min-height: 70%;
+    height: 70%;
+    background-color: #ffffff52;
+    margin-top: 50px;
+}
+
+#cent p {
+    padding-top: 30px;
+    font-family: 'Century Gothic';
+    font-size: 3.125em;
+    text-align: center;
+    line-height: 100px;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+}
+
+.right-arrow img {
+    height: 100px;
+    width: 50px;
+    opacity: 0.5;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    z-index: 9;
+}
+
+.left-arrow img {
+    height: 100px;
+    width: 50px;
+    opacity: 0.5;
+    z-index: 9;
+}
+
+.content {
+    font-family: 'Century Gothic';
+}
+
+.customSection,
+customSectionFirst {
+    margin-top: 50px;
+}
+
+.customSection h2,
+.customSectionFirst h2 {
+    color: #1c1c1c;
+}
+
+.list {
+    list-style-type: circle;
+}
+
+
+/*=============================================
+=            Second Sections            =
+=============================================*/
+
+#secondSection {
+    display: none;
+    min-height: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+#secondSectionBody {
+    padding: 150px 0px;
+    background: url('../images/background/aboutUsPage2BG.jpg');
+    background-size: cover;
+    min-height: 100%;
+}
+
+.bottomImage,
+.boxoutImage {
+    padding: 50px 0px;
+    width: 100% !important;
+}
+
+.divWrapper {
+    margin-top: 100px;
+    background: #fff;
+    font-size: 0.75em !important;
+}
+
+
+/* .divWrapper>.divChild { */
+
+.divChild {
+    height: 300px;
+    font-family: 'Aleo Light';
+    text-align: center !important;
+    background: #cacaca;
+    margin: 20px;
+    padding: 20px;
+}
+
+.childContent {
+    padding-top: 20px;
+}
+
+.childContent h1 {
+    font-family: 'Bebas-Neue';
+    transition: all .5s ease;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+.childContent p {
+    font-size: 0.75em;
+    font-family: 'Century Gothic';
+}
+
+
+/*=====  End of Second Sections  ======*/
+
+
+/* ===================================
+        HOVER CONTENT
+   ===================================
+   */
+
+.centerImage {
+    width: 50%;
+}
+
+.col1HoverContent {
+    height: 100%;
+    width: 100%;
+    background: url("../images/aboutUsHover/01.PNG");
+    background-size: cover;
+}
+
+.col2HoverContent {
+    height: 100%;
+    width: 100%;
+    background: url("../images/aboutUsHover/02.PNG");
+    background-size: cover;
+}
+
+.col3HoverContent {
+    height: 100%;
+    width: 100%;
+    background: url("../images/aboutUsHover/03.PNG");
+    background-size: cover;
+}
+
+.col4HoverContent {
+    height: 100%;
+    width: 100%;
+    background: url("../images/aboutUsHover/04.PNG");
+    background-size: cover;
+}
+
+.col5HoverContent {
+    height: 100%;
+    width: 100%;
+    background: url("../images/aboutUsHover/05.PNG");
+    background-size: cover;
+}
+
+.col6HoverContent {
+    height: 100%;
+    width: 100%;
+    background: url("../images/aboutUsHover/06.PNG");
+    background-size: cover;
+}
+
+#firstSection,
+#thirdSection,
+#fourthSection {
+    background: url("../images/background/aboutUsBG.jpg");
+    background-size: cover;
+}
+
+.firstPageParagraph {
+    color: #505050;
+    font-size: 1.56em;
+}
+
+.firstPageParagraph span {
+    font-weight: bolder;
+    font-size: 2.46em;
+}
+
+#thirdSection,
+#fourthSection {
+    min-height: 100%;
+    padding: 100px 0 0;
+    color: #505050;
+    font-size: 1.56em;
+}
+
+#thirdSectionContent,#fourthSectionContent {
+    font-size: 1.40em;
+}
+.investorsLogo {
+    width: 50%;
+    /*height: 497px;*/
+}
+
+.investorsLogo2 {
+    width: 700px;
+}
+
+.investorsPadding2 {
+    padding-top: 20px !important;
+}
+
+.investorsPadding3 {
+    padding-top: 30px;
+}
+
+.investorsPadding4 {
+    margin-top: 0px;
+}
+
+.fontSmall {
+    /*font-size: 1.25em !important;*/
+}
+
+.bottomImage4 {
+    margin-top: 50px;
+}
+
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+
+@media all and (min-width:1440px) {
+    .list,
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+@media all and (min-width:1024px) and (max-width:1439px) {
+    #secondSectionBody {
+        padding: 120px 0px;
+
+    }
+
+    #firstSection{
+
+    }
+}
+
+@media all and (min-width: 767px) and (max-width: 1024px) {
+    /*.firstPageParagraph {
+        font-size: 1rem;
+    }
+    .firstPageParagraph .bolder {
+        font-size: 1.5rem
+    }*/
+    #secondSectionBody {
+        padding: 100px 0px 0px;
+    }
+    .right-arrow {
+        right: 5%;
+    }
+    .left-arrow {
+        left: 5%;
+    }
+    .investorsLogo,
+    .investorsLogo2 {
+        width: 350px;
+    }
+    .boxoutImage {
+        padding: 50px 0px
+    }
+    .bottomImage {
+        padding: 0px;
+    }
+    html,
+    body {
+        overflow-y: auto;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .customSection {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .customSectionFirst {
+        margin-top: 50px;
+    }
+    #secondSectionBody {
+        padding: 50px 0px 0px;
+    }
+    .investorsLogo {
+        width: 275px;
+    }
+    #thirdSection,
+    #fourthSection {
+        padding: 100px 100px 0px;
+    }
+    .boxoutImage {
+        padding: 0px;
+    }
+    .investorsLogo2 {
+        width: 250px;
+    }
+    .investorsPadding4 {
+        margin-top: 0px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    html,
+    body {
+        overflow-y: auto;
+    }
+    .right-arrow {
+        right: 10%;
+    }
+    .left-arrow {
+        left: 10%;
+    }
+    .reachUsLink {
+        top: 49%;
+        width: 25px;
+        height: 120px;
+    }
+    .firstPageParagraph {
+        font-size: 1rem;
+    }
+    #secondSectionBody {
+        padding: 100px 0px 0px;
+    }
+    #aboutUsImage {
+        height: 300px;
+        margin: 0px;
+        margin-left: -30px;
+    }
+    ul.content {
+        margin-bottom: 0px;
+    }
+    footer.footer {
+        position: relative;
+        bottom: auto;
+        padding-top: 20px;
+    }
+    #thirdSection {
+        padding: 100px 0px 0px;
+    }
+    .investorsLogo {
+        width: 250px
+    }
+    .boxoutImage {
+        padding: 50px 0px 0px;
+    }
+    #fourthSection {
+        padding: 70px 0px 0px;
+    }
+    .investorsLogo2 {
+        width: 250px;
+    }
+    .bottomImage4 {
+        /*margin-top: -30px;*/
+        padding-top: 0px;
+    }
+    .fontSmall {
+        font-size: 1.8rem;
+    }
+    .bottomImage {
+        padding: 0px;
+    }
+}
+
+
+/* Portrait */
+
+@media screen and (orientation:portrait) {
+    /* Portrait styles here */
+}
+
+
+/* Landscape */
+
+@media screen and (orientation:landscape) {
+    /* Landscape styles here */
+}
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+
+/* iPhone Portrait */
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {}
+
+
+/* iPhone Landscape */
+
+@media screen and (max-device-width: 480px) and (orientation:landscape) {}
+
+@media all and (min-height:400) and (max-height:800px) {
+    .wide {
+        height: auto;
+    }
+}
+
+@media all and (max-width:767px) {
+
+    .investorsLogo {
+        width: 75%;
+        height: auto;
+    }
+
+    .para{
+       
+        margin:0 auto;
+    }
+
+    .boxoutImage{
+        padding: 10% 0px 10%
+    }
+
+    .customSection{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #secondSectionBody,#fourthSectionContent{
+        padding-bottom: 10%;
+    }
+
+    #fourthSection{
+        padding-top:30%;
+    }
+
+    .firstPageParagraph{
+        font-size: 0.90rem;
+        padding:5% 0;
+    }
+
+    .fontSmall{
+        font-size:1.56rem;
+    }
+
+    #thirdSectionContent,#fourthSectionContent {
+       font-size:1.56rem;
+    }
+
+}
+
+
+@media all and  (min-width:768px) and  (max-width:991px) {
+    .bottomImage4{
+        margin-top: 10%!important;
+    }
+
+
+    .firstPageParagraph{
+        font-size: 1.25rem;
+        padding:5% 0;
+    }
+
+    .firstPageParagraph .bolder{
+        /*font-size: 1.8rem;*/
+        
+    }
+    .investorsLogo {
+        width: 75%;
+        height: auto;
+    }
+
+    .boxoutImage{
+        padding-top: 7%;
+    }
+
+   #thirdSectionContent,#fourthSectionContent {
+        font-size:2rem;
+    }
+
+
+    .customSection{
+        font-size: 1em;
+        width: 85%;
+        margin: 0 auto;
+        text-align: left;
+        padding: 4% 0;
+    }
+
+    #secondSectionBody {
+        padding-top:15%;
+    }
+}
+
+
+@media all and (min-width:992px) and (max-width:1199px) {
+    .bottomImage4{
+        margin-top: 5%!important;
+    }
+    .investorsLogo {
+        width: 75%;
+        height: auto;
+    }
+
+    .firstPageParagraph{
+        font-size: 1.9em;
+        padding:5% 0;
+    }
+
+    .firstPageParagraph .bolder{
+        font-size: 2.3em;
+        
+    }
+    .investorsLogo {
+        width: 75%;
+        height: auto;
+    }
+
+    .boxoutImage{
+        padding-top: 7%;
+    }
+
+    #fourthSection, #thirdSection{
+        font-size:2rem;
+    }
+
+    #aboutUsImage {
+        height: 460px;
+    }
+
+
+   /* #fourthSection,.fontSmall{
+        font-size:1.38em;
+    }*/
+
+    #thirdSectionContent,#fourthSectionContent{
+        font-size:1.30em;
+    }
+
+    .customSection{
+
+        font-size: 1.56em;
+        width: 85%;
+        margin: 0 auto;
+        text-align: left;
+        padding: 6% 0;
+    }
+}

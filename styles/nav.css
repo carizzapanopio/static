@@ -1,0 +1,168 @@
+nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+nav ul li {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    transition: all 0.7s;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: gainsboro;
+    outline: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul li {
+        display: block;
+        height: 0%;
+        width: 100%;
+        top: auto;
+        flex-direction: row;
+    }
+    .openLi {
+        /* width: 25%; */
+        height: 17%;
+    }
+    header nav ul li:nth-child(1) {
+        width: 100%;
+        left: 0 !important;
+        top: 0;
+    }
+    header nav ul li:nth-child(2) {
+        width: 100%;
+        left: 0 !important;
+        top: 17%;
+    }
+    header nav ul li:nth-child(3) {
+        width: 100%;
+        left: 0 !important;
+        top: 34%;
+    }
+    header nav ul li:nth-child(4) {
+        width: 100%;
+        left: 0 !important;
+        top: 51%;
+    }
+    header nav ul li:nth-child(5) {
+        width: 100%;
+        left: 0 !important;
+        top: 68%;
+    }
+    header nav ul li:nth-child(6) {
+        width: 100%;
+        left: 0 !important;
+        top: 85%;
+    }
+}
+
+header nav ul li:nth-child(1) {
+    background-color: #e8e8e8;
+    color: #2f2e2c;
+    left: 0;
+}
+
+header nav ul li:nth-child(2) {
+    background-color: #cecece;
+    color: #2f2e2c;
+    left: 17%;
+}
+
+header nav ul li:nth-child(3) {
+    background-color: #ababab;
+    color: #2f2e2c;
+    left: 34%;
+}
+
+header nav ul li:nth-child(4) {
+    background-color: #6b6b6b;
+    color: rgb(150, 150, 150);
+    left: 51%;
+}
+
+header nav ul li:nth-child(5) {
+    background-color: #505050;
+    color: rgb(179, 179, 179);
+    left: 68%;
+}
+
+header nav ul li:nth-child(6) {
+    background-color: #252525;
+    color: rgb(224, 224, 224);
+    left: 85%;
+}
+
+.openLi {
+    /* width: 25%; */
+    width: 17%;
+}
+
+.menuli {
+    display: inline-block;
+    position: relative;
+    transition: all 0.6s;
+    font-size: 1.8rem;
+}
+
+.menuli:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    width: 0%;
+    height: 2px;
+    background-color: gainsboro;
+    transition: all 0.6s;
+}
+
+nav ul li:hover .menuli:after {
+    width: 70%;
+}
+
+.voce {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.voce a {
+    display: table-cell;
+    vertical-align: middle;
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+@media only screen and (max-height:1500px) {
+    .menuli {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .menuli {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .menuli {
+        font-size: 0.8rem;
+    }
+}

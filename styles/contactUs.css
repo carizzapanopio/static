@@ -1,0 +1,278 @@
+.wide {
+    min-width: 100% !important;
+    min-height: 55%;
+    /*width: 100%;*/
+    border-top: 00px solid #fff;
+    background-image: url('../images/background/map3.png?dummy=8484744');
+    background-size: cover;
+    /*height: 55%;*/
+}
+
+.txt {
+    border: none;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    /*padding-bottom: 5px;*/
+    width: 100%;
+    /*margin-top: 30px;*/
+}
+
+.txt-label {
+    font-size: 20px;
+    font-family: 'Century Gothic';
+}
+
+.contactUsMargin {
+    margin-left: -270px;
+}
+
+.messageMargin {
+    margin-left: -90px;
+}
+
+
+/* Underline and Placeholder */
+
+.form-wrapper {
+    margin-top: 20px;
+}
+
+.formContainer {
+    border: 3px solid black;
+    padding: 2.2rem;
+    /*position: absolute;*/
+    left: 20%;
+    bottom: 9%;
+}
+
+.btnFormat {
+    padding: 10px 40px;
+    font-size: 20px;
+}
+
+.submitOnMobile {
+    display: none;
+}
+
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+/*
+@media all and (min-width:1440px) {
+    .wide {
+        min-height: 45%;
+    }
+}
+
+@media all and (min-width:1025px) and (max-width:1439px) {}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .wide {
+        min-height: 240px;
+    }
+    .formContainer {
+        padding: 1rem;
+        bottom: 9%;
+        left: 3%;
+    }
+    .contactUsMargin {
+        margin-left: -240px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .txt {
+        width: 600px;
+    }
+    .contactUsMargin {
+        margin-left: -180px;
+    }
+    html,
+    body {
+        overflow-y: auto;
+    }
+}
+
+@media all and (max-width: 480px) {
+    html,
+    body {
+        overflow-y: auto;
+    }
+    footer.footer {
+        position: relative;
+    }
+    .formContainer {
+        position: relative;
+        bottom: auto;
+        left: auto;
+    }
+    .txt {
+        width: 300px;
+    }
+    .contactUsMargin,
+    .messageMargin {
+        margin-left: 0px;
+    }
+    .submitOnMobile {
+        display: inline-block;
+    }
+    .submitOnWeb {
+        display: none;
+    }
+}
+/*
+
+/* Portrait */
+
+/*@media screen and (orientation:portrait) {
+    /* Portrait styles here */
+/*}*/
+
+
+/* Landscape */
+
+/*@media screen and (orientation:landscape) {*/
+    /* Landscape styles here */
+/*}*/
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+
+/* iPhone Portrait */
+
+/*@media screen and (max-device-width: 480px) and (orientation:portrait) {}*/
+
+
+/* iPhone Landscape */
+
+/*@media screen and (max-device-width: 480px) and (orientation:landscape) {}*/
+
+
+/*@media all and (min-height:400px) and (max-height:800px) {
+    .formContainer {
+        position: relative;
+        left: 5%;
+        margin: 70px 50px -50px;
+    }
+}
+@media screen and (min-width:1920px) and (max-height:768px) {
+    .wide {
+        min-height: 200px !important;
+    }
+}*/
+
+#submit-btn{
+    display:none;
+}
+
+#web-submit-btn{
+        display:block;
+
+        display: flex;
+        align-items: center;
+    }
+
+@media all and (max-width:767px) {
+
+    .formContainer{
+        left:0%;
+        position:relative;
+        bottom:0%;
+    }
+
+    .txt{
+        width:100%;
+
+    }
+    
+    #submit-btn{
+        display:block;
+    }
+
+    .formContainer{
+        width:100%;
+        height:46.8%;
+        display: block;
+    }
+
+    #web-submit-btn{
+        display:none;
+    }
+
+
+    #submit-btn{
+        display:block;
+    }
+}
+
+
+@media all and (max-width:991px) {
+
+    html, body{
+        overflow: scroll;
+    }
+   
+
+    footer{
+        position:static !important;
+    }
+
+
+    #submit-btn{
+        display:block;
+    }
+
+    .formContainer{
+        width:100%;
+        height:auto;
+        display: block;
+    }
+
+    #web-submit-btn{
+        display:none;
+    }
+
+    #submit-btn{
+        display:block;
+    }
+}
+
+
+@media all and (min-width:992px) and (max-width:1199px) {
+
+    .wide{
+        height:45%;
+    }
+    .formContainer{
+        width:100%;
+        height:46.8%;
+        display: flex;
+        align-items: center;
+    }
+
+    .form-wrapper{
+        width:90%;
+    }
+    .txt{
+        width:100%;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+
+    #submit-btn{
+        display:block;
+    }
+
+
+    #web-submit-btn{
+        display:none;
+    }
+    
+}

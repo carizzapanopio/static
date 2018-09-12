@@ -1,0 +1,403 @@
+.wide {
+    padding-top: 3%;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    height: 30%;
+    width: 100%;
+}
+
+.bg {
+    background-image: url('../images/background/jobs.jpg');
+    background-size: cover;
+}
+
+.contentBg {
+    background-color: #ffffff52;
+    height:480px;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.22), 0 2px 1px -1px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    line-height: 30px;
+    width: 100%;
+    height: 85px;
+}
+
+.header {
+    padding-top: 40px;
+    min-width: 100%;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bolder;
+    font-family: 'Bebas-Neue';
+}
+
+.jobHeader {
+    margin-top: -10px;
+    margin-left: 150px;
+    font-size: 1.4em;
+    font-family: 'Bebas-Neue';
+}
+
+.jobHeaderAddiotionalPaddingLeft {
+    margin-left: 250px;
+}
+
+.jobLine {
+    stroke: rgb(0, 0, 0);
+    stroke-width: 8;
+}
+
+#sectionTwo,
+#sectionThree,
+#sectionFour,
+#sectionFive,
+#sectionSix,
+#sectionSeven,
+#sectionEight {
+    display: none;
+}
+
+.content {
+    font-family: 'Aleo';
+    /*line-height: 2;*/
+}
+
+.list {
+    padding: 0px;
+    font-weight: lighter;
+    font-family: 'Aleo';
+    /*line-height: 2;*/
+}
+
+.content, li{
+    font-size:1.5rem;
+}
+
+
+/*=============================================
+=            Right and Left Arrow            =
+=============================================*/
+
+.right-arrow {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    z-index: 9;
+}
+
+.right-arrow img {
+    height: 100px;
+    width: 50px;
+    opacity: 0.5;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    z-index: 9;
+}
+
+.left-arrow img {
+    height: 100px;
+    width: 50px;
+    opacity: 0.5;
+}
+
+
+/*=====  End of Right and Left Arrow  ======*/
+
+p {
+    font-family: 'bebas-neue';
+    /*font-size: 18px;*/
+}
+
+.mh-50 {
+    min-height: 50%;
+    height: 50%;
+}
+
+.mh-70 {
+    min-height: 70%;
+    height: 70%;
+}
+
+.mh-90 {
+    min-height: 90%;
+    height: 90%;
+}
+.sect{
+    height:100%;
+}
+.line-job{
+    /*min-height:5%;
+    max-height:5%;*/
+   /* height:5%;*/
+}
+
+.summarySection {
+    /*padding-bottom: 5%;*/
+    width:64%;
+    /*min-height: 47.5%;
+    max-height: 47.5%;*/
+    /*height: 47.5%;*/
+}
+
+.div-requirements{
+    /*min-height: 47.5%;
+    max-height: 47.5%;*/
+   
+
+    width:64%;
+    
+    position:fixed;
+    top:65.5%;
+}
+
+/*.p-100,
+.p-80 {
+    position: absolute;
+    bottom: 20%;
+    padding: 0px;
+}
+
+.p-50 {
+    position: absolute;
+    bottom: 15%;
+}*/
+
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+
+@media all and (min-width:1440px) {}
+
+@media all and (min-width:1025px) and (max-width:1439px) {
+
+    .contentBg{
+        height:608px !important;
+    }
+    .summarySection{
+        height:295px;
+        /*border:1px solid black;*/
+    }
+
+    .div-requirements{
+        position: relative;
+        /*margin-top: 10%;*/
+    }
+
+    .content, li{
+        font-size:1.1rem;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .wide {
+        height: auto;
+    }
+    html,
+    body {
+        overflow-y: auto;
+    }
+    .jobHeader {
+        margin-left: 10px;
+    }
+    .p-100,
+    .p-50,
+    .p-80,
+    .p-0 {
+        position: relative;
+    }
+    .content, li {
+        font-size: 1.1rem;
+    }
+    .jobHeaderAddiotionalPaddingLeft {
+        margin-left: 150px;
+    }
+    .jobHeaderAddiotionalPaddingLeft {
+        margin-left: 0px;
+    }
+    footer.footer {
+        position: relative;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .wide {
+        height: auto;
+    }
+    html,
+    body {
+        overflow-y: auto;
+    }
+    .p-100,
+    .p-50,
+    .p-80,
+    .p-0 {
+        position: relative;
+    }
+    .content, li {
+        font-size: 1.1rem;
+    }
+    .jobHeaderAddiotionalPaddingLeft,
+    .jobHeader {
+        margin-left: 0px;
+    }
+    footer.footer {
+        position: relative;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .wide {
+        height: auto;
+    }
+    html,
+    body {
+        overflow-y: auto;
+    }
+    .p-100,
+    .p-50,
+    .p-80,
+    .p-0 {
+        position: relative;
+    }
+    .content, li {
+        font-size: 1.1rem;
+    }
+    .jobHeaderAddiotionalPaddingLeft {
+        margin-left: 0px;
+    }
+    footer.footer {
+        position: relative;
+    }
+}
+
+@media all and (max-height:768px) {
+    .wide {
+        height: auto;
+    }
+    html,
+    body {
+        overflow-y: auto;
+    }
+    .p-100,
+    .p-50,
+    .p-80,
+    .p-0 {
+        position: relative;
+    }
+    .content, li {
+        font-size: 1.1rem;
+    }
+    .jobHeaderAddiotionalPaddingLeft {
+        margin-left: 0pxs;
+    }
+    footer.footer {
+        position: relative;
+    }
+}
+
+
+
+
+@media all and (max-width:767px) {
+
+    .header{
+        padding: 23% 0 0;
+    }
+    .wide{
+        height:auto;
+        padding:4% 1% 0 1%;
+    }
+
+    .div-requirements{
+        position: relative;
+    }
+
+    .jobHeader{
+        margin:0 auto;
+        font-size:1.5em;
+        padding-bottom: 2%;
+    }
+
+    .summarySection,.div-requirements{
+        width:75%;
+        margin:0 auto;
+    }
+    h3{
+
+        font-size:1.3em;
+    }
+    .content, li{
+        font-size:1.1em;
+    }
+
+
+    footer.footer{
+        position:static;
+    }
+
+    .summarySection{
+        height: auto;
+    }
+    
+}
+
+
+@media all and (min-width:768px) and (max-width:1199px) {
+
+    .header{
+        padding: 10% 0 0;
+    }
+    .wide{
+        height:75%;
+        padding:4% 1% 0 1%;
+    }
+
+    .div-requirements{
+        position: relative;
+    }
+
+    .jobHeader{
+        margin:0 auto;
+        font-size:1.5em;
+        padding-bottom: 2%;
+    }
+
+    .summarySection,.div-requirements{
+        width:75%;
+        margin:0 auto;
+    }
+    h3{
+
+        font-size:1.3em;
+    }
+    .content, li{
+        font-size:1.1em;
+    }
+
+    footer.footer{
+        position:fixed;
+    }
+
+    .summarySection{
+        height: 380px;
+    }
+    
+}
+
+

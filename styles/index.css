@@ -1,0 +1,68 @@
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+
+@media all and (min-width:1440px) {
+    .sticky .logo {}
+}
+
+@media all and (min-width:1025px) and (max-width:1439px) {
+    .sticky .logo {
+        margin-left: -10%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .sticky .logo {
+        margin-left: 10%;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .sticky .logo {
+        margin-left: 10%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .sticky .logo {
+        margin-left: 10%;
+    }
+    img.centerImage {
+        height: 10%;
+    }
+    img.centerImage:empty {
+        height: 10%;
+    }
+}
+
+
+/* Portrait */
+
+@media screen and (orientation:portrait) {
+    /* Portrait styles here */
+}
+
+
+/* Landscape */
+
+@media screen and (orientation:landscape) {
+    /* Landscape styles here */
+}
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+
+/* iPhone Portrait */
+
+@media screen and (max-device-width: 480px) and (orientation:portrait) {}
+
+
+/* iPhone Landscape */
+
+@media screen and (max-device-width: 480px) and (orientation:landscape) {}
